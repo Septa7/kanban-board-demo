@@ -1,6 +1,6 @@
 # kanban-board-demo
 Demo-Projekt zum Erlernen von GitHub-Projekten, Issues und Kanban-Workflows
-# Kanban Board Demo
+
 Ein einfaches GitHub-Demoprojekt, das zeigt, wie man Aufgaben mit
 *Issues*, *Projektboards*, *benutzerdefinierten Feldern* und *Automatisierungen* verwalten kann.
 
