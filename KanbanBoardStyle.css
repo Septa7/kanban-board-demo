@@ -1,0 +1,80 @@
+/* --- Global Styles & Resets --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6; /* Дуже світло-сірий фон */
+    color: #333;
+    line-height: 1.5;
+    padding: 2rem; /* Відступи по краях сторінки */
+}
+
+/* --- Kanban Board Container --- */
+.kanban-board {
+    display: flex;
+    gap: 1.5rem; /* Відстань між колонками */
+    width: 100%;
+    max-width: 1200px; /* Обмеження ширини для великих екранів */
+    margin: 0 auto; /* Центрування дошки */
+    overflow-x: auto; /* Горизонтальний скрол на малих екранах */
+    padding-bottom: 1rem; /* Додає трохи місця знизу для тіней */
+}
+
+/* --- Kanban Columns --- */
+.kanban-column {
+    flex: 1; /* Кожна колонка займає рівну ширину */
+    min-width: 280px; /* Мінімальна ширина колонки */
+    background-color: #ffffff; /* Білий фон для колонок */
+    border-radius: 8px; /* Легке заокруглення кутів */
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* М'яка, ледь помітна тінь */
+}
+
+.column-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee; /* Тонка лінія-роздільник */
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* Великі літери для заголовків */
+    letter-spacing: 0.5px;
+}
+
+/* --- Kanban Cards --- */
+.kanban-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Дуже світла рамка */
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* Ще легша тінь для карток */
+    cursor: grab; /* Вказує, що картку можна перетягувати */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kanban-card:hover {
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Легка тінь при наведенні */
+}
+
+.kanban-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-content {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Псевдо-клас для перетягування (якщо ви додасте JS) */
+.kanban-card:active {
+    cursor: grabbing;
+    background-color: #fdfdfd;
+    transform: scale(1.02); /* Легке збільшення при "захопленні" */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}

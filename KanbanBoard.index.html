@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="kanban-board">
+
+        <section class="kanban-column">
+            <h2 class="column-title">To Do</h2>
+            
+            <div class="kanban-card" draggable="true">
+                <div class="card-content">Дизайн макету</div>
+            </div>
+            
+            <div class="kanban-card" draggable="true">
+                <div class="card-content">Розробити UI</div>
+            </div>
+
+            <div class="kanban-card" draggable="true">
+                <div class="card-content">Написати User Stories</div>
+            </div>
+        </section>
+
+        <section class="kanban-column">
+            <h2 class="column-title">In Progress</h2>
+            
+            <div class="kanban-card" draggable="true">
+                <div class="card-content">Верстка головної сторінки</div>
+            </div>
+        </section>
+
+        <section class="kanban-column">
+            <h2 class="column-title">Done</h2>
+            
+            <div class="kanban-card" draggable="true">
+                <div class="card-content">Налаштувати репозиторій</div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
